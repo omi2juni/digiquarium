@@ -32,7 +32,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(750, 450);
+  createCanvas(windowWidth, windowHeight);
   
   checkbox1 = createCheckbox("🤡");
   checkbox2 = createCheckbox("🐠");
