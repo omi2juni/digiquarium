@@ -48,9 +48,9 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  //background(220);
   
-  image(waterbg, 0,0, 750, 500);
+  image(waterbg, 0,0, windowWidth, windowHeight);
 
    for (let i=0; i<fishesCl.length; i++){
       var currentObjCl = fishesCl[i];
@@ -64,7 +64,7 @@ function draw() {
      // xpos[i] = lerp(xpos[i], xpos[i] += xspeed[i], 0.6);
      if (currentObjCl.xpos < -100){
       //fishesCl.splice(i,1);
-      currentObjCl.xpos = 690;
+      currentObjCl.xpos = windowWidth+50;
      }
    }
   
@@ -77,7 +77,7 @@ function draw() {
      currentObjBW.ypos += sin(frameCount*0.05);
      // xpos[i] = lerp(xpos[i], xpos[i] += xspeed[i], 0.6);
      if (currentObjBW.xpos < -100){
-      currentObjBW.xpos = 690;
+      currentObjBW.xpos = windowWidth+50;
      }
    }
   
@@ -91,7 +91,7 @@ function draw() {
      // xpos[i] = lerp(xpos[i], xpos[i] += xspeed[i], 0.6);
      if (currentObjRED.xpos < -100){
       //fishesRED.splice(i,1);
-      currentObjRED.xpos = 690;
+      currentObjRED.xpos = windowWidth+50;
      }
    }
   
@@ -105,7 +105,7 @@ function draw() {
      // xpos[i] = lerp(xpos[i], xpos[i] += xspeed[i], 0.6);
      if (currentObjYEL.xpos < -100){
       //fishesYEL.splice(i,1);
-      currentObjYEL.xpos = 690;
+      currentObjYEL.xpos = windowWidth+50;
      }
    }
   
